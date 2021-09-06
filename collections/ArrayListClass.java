@@ -1,8 +1,9 @@
-//package collectionexamples;
+package collections;
+
 
 import java.util.ArrayList;
 
-public class ArrayListExample {
+public class ArrayListClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -18,7 +19,7 @@ public class ArrayListExample {
 	studentNamesList.add("Nissi");
 	
 	
-	System.out.println("################Display Elements");
+	System.out.println("################Display Elements @@@@@@");
 	//Display elements from above list
 			for(String studentName:studentNamesList){
 				System.out.println(studentName);
