@@ -1,10 +1,18 @@
 package pojoclasses;
 
-public class Student {
+public class Student implements Comparable<Student> {
 
 Integer id;
 String name;
 String address;
+
+public Student(){}
+
+public Student(Integer id,String name,String address){
+	this.id=id;
+	this.name=name;
+	this.address=address;
+}
 public Integer getId() {
 	return id;
 }
@@ -47,6 +55,24 @@ public boolean equals(Object obj) {
 	} else if (!id.equals(other.id))
 		return false;
 	return true;
+}
+
+public int compareTo(Student arg0) {
+	// TODO Auto-generated method stub
+	if(arg0.id>id){
+		return -1;
+	}else if(arg0.id==id) {
+		return 0;
+	}else{
+		return 1;
+	}
+	
+}
+
+@Override
+public String toString() {
+	return "Student [id=" + id + ", name=" + name + ", address=" + address
+			+ "]";
 }
 
 
